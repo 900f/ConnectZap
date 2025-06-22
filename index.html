@@ -93,18 +93,18 @@
         }
 
         .download-btn {
-            background: linear-gradient(45deg, #ff6b35, #f7931e, #ffcc02);
+            background: linear-gradient(45deg, #2196f3, #21cbf3, #03a9f4);
             border: none;
             padding: 1rem 2.5rem;
             font-size: 1.2rem;
             font-weight: 600;
             border-radius: 50px;
-            color: #000;
+            color: #fff;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -126,7 +126,7 @@
 
         .download-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 12px 35px rgba(33, 150, 243, 0.4);
         }
 
         .scroll-indicator {
@@ -377,11 +377,10 @@
             document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
         });
 
-        // Placeholder for download functionality
+        // Download functionality
         document.getElementById('downloadBtn').addEventListener('click', (e) => {
             e.preventDefault();
-            // You can replace this with your actual download link
-            alert('Download link will be configured here!');
+            window.location.href = 'https://github.com/900f/ConnectZap/releases/download/Zap/ConnectZap.exe';
         });
 
         // Initialize
